@@ -3,6 +3,7 @@ import { Navbar, Nav, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { navItems } from '../../data';
 import useScroll from '../../hooks/useScroll';
+import logo from '../../assets/images/logo.jpg';
 
 const Navigation: React.FC = () => {
   const scrolled = useScroll();
@@ -16,7 +17,7 @@ const Navigation: React.FC = () => {
       <Container>
         <Navbar.Brand as={Link} to="/">
           <img
-            src={require('../../assets/images/logo.jpg')}
+            src={logo}
             alt="Kakau Artesã"
             className="logo-img"
           />
