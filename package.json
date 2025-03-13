@@ -3,7 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+<<<<<<< HEAD
     "@fortawesome/fontawesome-free": "^6.7.2",
+=======
+>>>>>>> 1d23411a394b9f0a1ec6231b6970d7858e52a75c
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.2.0",
@@ -11,7 +14,10 @@
     "@types/jest": "^27.5.2",
     "@types/node": "^16.18.126",
     "@types/react": "^19.0.10",
+<<<<<<< HEAD
     "@types/react-bootstrap": "^0.32.37",
+=======
+>>>>>>> 1d23411a394b9f0a1ec6231b6970d7858e52a75c
     "@types/react-dom": "^19.0.4",
     "@types/react-router-dom": "^5.3.3",
     "bootstrap": "^5.3.3",
