@@ -3,31 +3,24 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-<<<<<<< HEAD
-    "@fortawesome/fontawesome-free": "^6.7.2",
-=======
->>>>>>> 1d23411a394b9f0a1ec6231b6970d7858e52a75c
-    "@testing-library/dom": "^10.4.0",
-    "@testing-library/jest-dom": "^6.6.3",
-    "@testing-library/react": "^16.2.0",
-    "@testing-library/user-event": "^13.5.0",
-    "@types/jest": "^27.5.2",
-    "@types/node": "^16.18.126",
-    "@types/react": "^19.0.10",
-<<<<<<< HEAD
+    "@fortawesome/fontawesome-free": "^6.5.1",
+    "@testing-library/jest-dom": "^6.4.2",
+    "@testing-library/react": "^14.2.1",
+    "@testing-library/user-event": "^14.5.2",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.11.19",
+    "@types/react": "^18.2.57",
     "@types/react-bootstrap": "^0.32.37",
-=======
->>>>>>> 1d23411a394b9f0a1ec6231b6970d7858e52a75c
-    "@types/react-dom": "^19.0.4",
+    "@types/react-dom": "^18.2.19",
     "@types/react-router-dom": "^5.3.3",
     "bootstrap": "^5.3.3",
-    "react": "^19.0.0",
-    "react-bootstrap": "^2.10.9",
-    "react-dom": "^19.0.0",
-    "react-router-dom": "^7.3.0",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.10.1",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.1",
     "react-scripts": "5.0.1",
     "typescript": "^4.9.5",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^3.5.2"
   },
   "scripts": {
     "start": "react-scripts start",
