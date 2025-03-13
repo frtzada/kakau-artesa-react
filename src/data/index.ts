@@ -10,19 +10,19 @@ export const navItems: NavItem[] = [
 export const produtos: Produto[] = [
   {
     id: 1,
-    imagem: 'produto1.jpg',
+    imagem: require('../assets/images/produto1.jpg'),
     titulo: 'Vaso Rústico',
     descricao: 'Vaso artesanal feito com técnicas tradicionais e acabamento natural'
   },
   {
     id: 2,
-    imagem: 'produto2.jpg',
+    imagem: require('../assets/images/produto2.jpg'),
     titulo: 'Cesto Decorativo',
     descricao: 'Cesto trançado à mão com fibras naturais e design exclusivo'
   },
   {
     id: 3,
-    imagem: 'produto3.jpg',
+    imagem: require('../assets/images/produto3.jpg'),
     titulo: 'Jogo de Cerâmica',
     descricao: 'Conjunto de peças em cerâmica com acabamento artesanal'
   }

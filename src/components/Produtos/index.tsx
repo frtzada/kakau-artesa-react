@@ -5,23 +5,33 @@ import { produtos } from '../../data';
 const Produtos: React.FC = () => {
   return (
     <>
-      <h2 className="section-title">Peças em Destaque</h2>
-      <Row>
+      <h2 className="section-title">
+        <img src={require('../../assets/images/logo.jpg')} alt="Logo Kakau Artesã" />
+        Peças em Destaque
+      </h2>
+      <Row className="g-4">
         {produtos.map(produto => (
-          <Col key={produto.id} md={4} className="mb-4">
-            <Card className="h-100">
-              <Card.Img
-                variant="top"
-                src={require(`../../assets/images/${produto.imagem}`)}
-                alt={produto.titulo}
-              />
-              <Card.Body className="d-flex flex-column">
-                <Card.Title>{produto.titulo}</Card.Title>
-                <Card.Text>{produto.descricao}</Card.Text>
-                <div className="mt-auto text-center">
-                  <button className="btn btn-primary">Ver Detalhes</button>
+          <Col key={produto.id} md={4}>
+            <Card className="h-100 border-0 shadow-sm">
+              <div className="position-relative">
+                <Card.Img
+                  variant="top"
+                  src={produto.imagem}
+                  alt={produto.titulo}
+                  className="produto-imagem"
+                  style={{
+                    height: '300px',
+                    objectFit: 'cover',
+                    objectPosition: produto.id === 2 ? 'center 70%' : 'center'
+                  }}
+                />
+                <div className="produto-overlay">
+                  <div className="produto-detalhes">
+                    <h3 className="h4 mb-2">{produto.titulo}</h3>
+                    <p className="mb-0">{produto.descricao}</p>
+                  </div>
                 </div>
-              </Card.Body>
+              </div>
             </Card>
           </Col>
         ))}
@@ -30,4 +40,4 @@ const Produtos: React.FC = () => {
   );
 };
 
-export default Produtos; 
+export default Produtos;

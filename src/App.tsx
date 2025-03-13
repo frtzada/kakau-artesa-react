@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
-import Header from './components/Header';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navigation from './components/Navigation';
 import Hero from './components/Hero';
 import Produtos from './components/Produtos';
 import Sobre from './components/Sobre';
@@ -9,28 +10,36 @@ import Footer from './components/Footer';
 
 const App: React.FC = () => {
   return (
-    <>
-      <Header />
+    <Router>
+      <Navigation />
       <main>
-        <Hero />
-        <section id="produtos" className="section-padding">
-          <Container>
-            <Produtos />
-          </Container>
-        </section>
-        <section id="sobre" className="section-padding bg-light-custom">
-          <Container>
-            <Sobre />
-          </Container>
-        </section>
-        <section id="contato" className="section-padding">
-          <Container>
-            <Contato />
-          </Container>
-        </section>
+        <Routes>
+          <Route path="/" element={
+            <>
+              <section id="inicio">
+                <Hero />
+              </section>
+              <section id="produtos" className="py-5">
+                <Container>
+                  <Produtos />
+                </Container>
+              </section>
+              <section id="sobre" className="py-5 bg-light">
+                <Container>
+                  <Sobre />
+                </Container>
+              </section>
+              <section id="contato" className="py-5">
+                <Container>
+                  <Contato />
+                </Container>
+              </section>
+            </>
+          } />
+        </Routes>
       </main>
       <Footer />
-    </>
+    </Router>
   );
 };
 
