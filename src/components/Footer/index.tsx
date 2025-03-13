@@ -31,7 +31,7 @@ const Footer: React.FC = () => {
                 <a
                   key={social.id}
                   href={social.link}
-                  className="text-white"
+                  className="text-white fs-4"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={social.label}
