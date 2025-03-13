@@ -32,19 +32,13 @@ export const socialLinks: SocialLink[] = [
   {
     id: 'instagram',
     icon: 'fab fa-instagram',
-    link: 'https://instagram.com/kakauartesa',
+    link: 'https://www.instagram.com/kakau_artesa/',
     label: 'Instagram'
-  },
-  {
-    id: 'facebook',
-    icon: 'fab fa-facebook',
-    link: 'https://facebook.com/kakauartesa',
-    label: 'Facebook'
-  },
-  {
-    id: 'pinterest',
-    icon: 'fab fa-pinterest',
-    link: 'https://pinterest.com/kakauartesa',
-    label: 'Pinterest'
   }
-]; 
+];
+
+export const contatoInfo = {
+  email: 'Kakau74artesa@gmail.com',
+  telefone: '(21) 99805-9698',
+  whatsapp: '5521998059698'
+}; 

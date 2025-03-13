@@ -1,6 +1,6 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
-import { socialLinks } from '../../data';
+import { socialLinks, contatoInfo } from '../../data';
 
 const Contato: React.FC = () => {
   return (
@@ -13,7 +13,7 @@ const Contato: React.FC = () => {
           </p>
           <div className="d-flex justify-content-center gap-4 mb-5">
             <a
-              href="https://wa.me/5511999999999"
+              href={`https://wa.me/${contatoInfo.whatsapp}`}
               className="btn btn-success btn-lg"
               target="_blank"
               rel="noopener noreferrer"
@@ -22,7 +22,7 @@ const Contato: React.FC = () => {
               WhatsApp
             </a>
             <a
-              href="mailto:contato@kakauartesa.com.br"
+              href={`mailto:${contatoInfo.email}`}
               className="btn btn-primary btn-lg"
             >
               <i className="far fa-envelope me-2"></i>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { socialLinks } from '../../data';
+import { socialLinks, contatoInfo } from '../../data';
 
 const Footer: React.FC = () => {
   return (
@@ -18,10 +18,10 @@ const Footer: React.FC = () => {
             <h3 className="h5 mb-3">Contato</h3>
             <p>
               <i className="far fa-envelope me-2"></i>
-              contato@kakauartesa.com.br
+              {contatoInfo.email}
               <br />
               <i className="fab fa-whatsapp me-2"></i>
-              (11) 99999-9999
+              {contatoInfo.telefone}
             </p>
           </Col>
           <Col lg={4}>
