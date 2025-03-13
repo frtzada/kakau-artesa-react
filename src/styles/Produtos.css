@@ -1,0 +1,97 @@
+.produtos-section {
+  background-color: #f8f9fa;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.logo-img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.produto-card {
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+.produto-card:hover {
+  transform: translateY(-5px);
+}
+
+.produto-imagem-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.produto-imagem {
+  transition: transform 0.3s ease;
+}
+
+.produto-card:hover .produto-imagem {
+  transform: scale(1.05);
+}
+
+.produto-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.produto-card:hover .produto-overlay {
+  opacity: 1;
+}
+
+.produto-overlay button {
+  transform: translateY(20px);
+  transition: transform 0.3s ease;
+}
+
+.produto-card:hover .produto-overlay button {
+  transform: translateY(0);
+}
+
+.btn-encomendar {
+  background-color: #8B4513;
+  border-color: #8B4513;
+  color: white;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-encomendar:hover {
+  background-color: #A0522D;
+  border-color: #A0522D;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(139, 69, 19, 0.2);
+}
+
+.btn-encomendar:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+@media (max-width: 768px) {
+  .logo-img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .produto-imagem {
+    height: 300px !important;
+  }
+} 
